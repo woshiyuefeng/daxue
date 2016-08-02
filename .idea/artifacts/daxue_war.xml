@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="daxue:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="daxue.war">
+      <element id="artifact" artifact-name="daxue:war exploded" />
+    </root>
+  </artifact>
+</component>
