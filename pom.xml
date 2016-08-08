@@ -13,6 +13,7 @@
     <spring.version>4.1.6.RELEASE</spring.version>
     <mybatis.version>3.2.6</mybatis.version>
     <mysql.version>5.1.30</mysql.version>
+    <sqlite.version>3.8.11.2</sqlite.version>
     <org.springframework.security-version>3.2.0.RELEASE</org.springframework.security-version>
     <jstl.version>1.2</jstl.version>
     <jsp.version>2.0</jsp.version>
@@ -83,6 +84,13 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>${mysql.version}</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+    <dependency>
+      <groupId>org.xerial</groupId>
+      <artifactId>sqlite-jdbc</artifactId>
+      <version>${sqlite.version}</version>
+    </dependency>
+
     <!-- servlet -->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -180,15 +188,6 @@
               <port>8080</port>
             </connector>
           </connectors>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.0.2</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
         </configuration>
       </plugin>
       <!-- Mybatis generator代码生成插件 配置 -->
